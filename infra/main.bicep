@@ -89,3 +89,5 @@ module pgweb './core/host/container-app.bicep' = {
     externalIngress: true
   }
 }
+
+output PGWEB_URL string = pgweb.outputs.url
