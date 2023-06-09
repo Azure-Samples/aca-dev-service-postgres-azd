@@ -91,3 +91,5 @@ module pgweb './core/host/container-app.bicep' = {
 }
 
 output PGWEB_URL string = pgweb.outputs.url
+output PSQL_CLI_APP_NAME string = psqlCli.outputs.name
+output RESOURCE_GROUP string = rg.name
